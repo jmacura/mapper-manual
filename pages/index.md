@@ -1,13 +1,13 @@
 ---
-title: User Manual
-edited: 3 June 2018
+title: Uživatelská příručka
+edited: 4. září 2018
 redirect_from:
   - /
   - /Home
 ---
 
 {% if doxygen %}
-**Note:** The [online version](https://www.openorienteering.org/mapper-manual/) of this documentation may contain additions and corrections.
+**Poznámka:** [online verze](https://www.openorienteering.org/mapper-manual/) této příručky (anglicky) může obsahovat více informací a opravy.
 {% endif %}
 
 ## Contents
@@ -68,4 +68,3 @@ Submit feedback, bug reports, feature requests, and contributions.
 
 [Releases](https://github.com/OpenOrienteering/mapper/releases)
 Releases, with links to change information and known issues.
-
