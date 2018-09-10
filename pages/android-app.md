@@ -1,71 +1,71 @@
 ---
-title: The Mapper App for Android
+title: Aplikace Mapper pro Android
 authors:
   - Kai Pastor
   - Thomas Schoeps
 keywords: Android
-edited: 3 February 2018
+edited: 4. září 2018
 redirect_from:
   - /android/
   - '/Android Manual/'
   - /mapper-manual/pages/android-index.html
 ---
 
-## Preliminary remarks
+## Úvodní informace
 
-The Android version of OpenOrienteering Mapper is not as self-descriptive as
-the desktop version, so please read this first for important instructions.
+Verze aplikace OpenOrienteering Mapper pro systém Android není tak intuitivní jako
+verze pro počítače, proto si prosím přečtěte tyto důležité informace.
 
-[Device requirements and recommendations](android-requirements.md){: .subpage}
+[Požadavky a doporučení na zařízení](android-requirements.md){: .subpage}
 
-[Preparing a map on the PC](android-pc.md){: .subpage}
+[Příprava mapy na PC](android-pc.md){: .subpage}
 
-[Storing Maps and Templates on Android Devices](android-storage.md){: .subpage}
+[Ukládání map a podkladů na zařízeních se systémem Android](android-storage.md){: .subpage}
 
 {% if doxygen %}
-**Note:** The [online version](https://www.openorienteering.org/mapper-manual/android/) of this documentation may contain additions and corrections.
+**Poznámka:** [online verze](https://www.openorienteering.org/mapper-manual/) této příručky (anglicky) může obsahovat více informací a opravy.
 {% endif %}
 
 
-## Using the Mapper app
+## Používání aplikace Mapper
 
-On startup, the app shows a list of map files available from the [supported storage locations](android-storage.md). To start editing a map, touch its filename.
+Po spuštení aplikace se zobrazí seznam mapových souborů dostupných na [podporovaných umístěních k ukládání](android-storage.md). K úpravě mapy stiskněte název souboru.
 
 ![ ](images/Android_UI_explanation.png)
 
-The map editor is slightly different from the desktop version. This page focuses on specific features of the mobile version. To find out about the other symbols, see [Toolbars](toolbars.md) in the desktop application's manual.
+Editor mapy je trochu odlišný od verze pro počítače. Tato stránka se soustředí na specifika mobilní verze. Pokud vás zajímá význam ostatních symbolů, prohlédněte si [Nástrojové lišty](toolbars.md) v manuálu pro PC verzi.
 
-#### ![ ](../mapper-images/arrow-thin-upleft.png) Hide the top bar
+#### ![ ](../mapper-images/arrow-thin-upleft.png) Skrýt horní lištu
 
-Using this button, you may hide the top bar, leaving more screen for the map. A similar button will remain visible for restoring the top bar again.
-
-
-#### ![ ](../mapper-images/compass.png) Compass display toggle
-
-When this item is activated, a compass is shown in the top-left corner of the screen. The red line indicates the north direction, while the black-white lines show the up direction of your device. If both are aligned, the device is aligned with magnetic north. When the needle is close to the north direction, a green circle appears which quickly shows how well the device is aligned: the larger it is, the better the alignment is. The compass works three-dimensionally, so you do not need to hold the device in a flat pose for it to work.
-
-Note: the usefulness of the compass depends on the presence of a gyroscope, as mentioned in the device recommendations section.
-
-Attention: the compass is very sensitive to magnetic materials. Android tries the eliminate the influence of local magnetic fields, but this requires calibration. To do this, move the device around in the shape of an 8 while rotating it and while the compass is active. If the local influence changes, re-calibration is required.
+Použitím tohoto tlačítka můžete skrýt horní nabídku s nástroji, čímž získáte více místa pro mapu. Obdobné tlačítko zůstane viditelné, aby bylo možné horní nabídku znovu zobrazit.
 
 
-#### ![ ](../mapper-images/tool-gps-display.png) Location display toggle
+#### ![ ](../mapper-images/compass.png) Přepínač kompasu
 
-If the currently active map work has valid georeferencing, this control will be enabled and will show a dot at your current position as obtained from GPS or other positioning services. In addition, in case an accuracy estimate (HDOP) is available, this shows a circle around the dot which indicates the positioning accuracy. The chance of your real position being in the circle is approximately 70%.
+Pokud aktivujete toto tlačítko, zobrazí se v levém horním rohu obrazovky kompas. Červená jehla ukazuje směr na sever, zatímco černo-bílé pruhy vymezují směr natočení vašeho zařízení. Když je jehla rovnoběžně mezi černými pruhy, je zařízení natočeno k severnímu magnetickému pólu. Jakmile je jehla blízko severnímu směru, objeví se zelená kružnice, který usnadňuje přesně poznat, jak dobře je zařízení srovnáno se severním směrem: čím větší kružnice, tím lepší je srovnání. Kompas funguje ve třech dimenzích, takže nemusíte držet zařízení perfektně ve vodorovném směru, aby se otáčel.
 
-While this is active, your track is automatically recorded into a GPX file in the directory of your map, named "<map> - GPS-<YYYY-MM-DD>.gpx". This file is included as a template in the map. You can simply show it using the template visibility control button to view your track.
+Poznámka: užitečnost kompasu závisí na přítomnosti gyroskopu, jak je zmíněno v kapitole doporučení na zařízení.
 
-Note that track recording might be interrupted while the screen is off or the app is in the background to save battery. Keep the app active if you want to ensure continuous track recording.
-
-
-#### ![ ](../mapper-images/gps-distance-rings.png) Distance rings toggle
-
-This button is active if location display is active. When activated, this will display rings in 10 meter and 20 meter distance from the current location which can be used to do rough distance estimates.
+Upozornění: kompas je velmi citlivý na magnetické materiály. Android se snaží eliminovat vliv lokálních magnetických polí, to ale vyžaduje kalibraci. Tu provedete tak, že budete zařízením pohybovat ve tvaru čísla 8 a současně s ním budete otáčet (ve vodorovné poloze). Zároveň musí být kompas aktivován. Pokud se lokální vlivy změní, musíte zařízení kalibrovat znovu.
 
 
-#### ![ ](../mapper-images/rotate-map.png) Automatic north alignment toggle
+#### ![ ](../mapper-images/tool-gps-display.png) Přepínač zobrazení (GPS) polohy
 
-When this toggle is active, the map is automatically rotated to north using the device's internal compass. The update frequency is 1 update per second. This is quite low on purpose to save battery, but you probably still need some replacement batteries when using this mode. While interacting with the map and for another 1.5 seconds after that, the map is not rotated to allow editing without unwanted rotations. If GPS position display is activated at the same time, a line starting from the GPS position and going in the direction of the up direction of your device is displayed which shows your viewing direction (assuming you are holding the device upright).
+Toto tlačítko lze použít jen pokud je mapa, se kterou právě pracujete, správně georeferencovaná. V opačném případě je šedé a nelze stisknout. Po aktivaci tohoto tlačítka a po určení vaší polohy (to může trvat i několik minut) se ukáže v mapě červená tečka označující vaši aktuální pozici, získanou z GPS nebo z jiné služby poskytující informace o poloze (Wi-fi, GSM síť, ...). Pokud je navíc dostupný i odhad přesnosti polohy (HDOP), zobrazí se kolem tečky ještě červená kružnice, která ukazuje přesnost určení vaší polohy. Pravděpodobnost, že se nacházíte uvnitř této kružnice je cca 70 %.
+
+Po dobu, kdy je zobrazení polohy aktivní, je vaše trasa automaticky zaznamenávána do souboru GPX s názvem "<název mapy> - GPS-<ROK-MĚSÍC-DEN>.gpx", který se ukládá do složky s aktuálně otevřenou mapou. Tento soubor je přiložen jako podklad k aktuální mapě. Svou trasu tak můžete snadno zobrazit nebo skrýt stejně jako ostatní podklady.
+
+Berte na vědomí, že některá zařízení mohou přerušit záznam trasy, když je displej zařízení vypnutý nebo aplikace běží jen na pozadí z důvodu úspory baterie. Pokud chcete zajistit nepřerušované nahrávání trasy, nechte aplikaci OO Mapper stále aktivní.
+
+
+#### ![ ](../mapper-images/gps-distance-rings.png) Přepínač vzdálenostních prstenců
+
+Toto tlačítko lze použít jen pokud je aktivní i zobrazení polohy. Po aktivaci tohoto přepínače se zobrazí okolo vaší aktuální pozice další kružnice (prstence) ve vzdálenosti 10 a 20 metrů. Ty mohou být použity k hrubému odhadu vzdáleností v terénu.
+
+
+#### ![ ](../mapper-images/rotate-map.png) Přepínač automatického natočení k severu
+
+Když je aktivní tento přepínač, mapa se pomocí vnitřního kompasu v zařízení automaticky natáčí k severu. Aktualizace natočení probíhá 1 za sekundu, což je záměrně nízká frekvence kvůli úspoře baterie. I tak budete při používání této funkce pravděpodobně potřebovat náhradní baterie nebo dobíjení. Během jakékoli interakce s mapou a dalších 1,5 s poté se mapa nenatáčí, aby nedocházelo k nechtěným otočením během editace. Pokud je zároveň aktivováno i zobrazení polohy, pak se na displeji ukáže polopřímka, která začíná v bodě vaší aktuální pozice a míří směrem, kterým se díváte (za předpokladu, že držíte zařízení před sebou, displejem nahoru).
 
 
 -----

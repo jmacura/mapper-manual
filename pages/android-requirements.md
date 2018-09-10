@@ -1,35 +1,35 @@
 ---
-title: Device Requirements and Recommendations
+title: Požadavky a doporučení na zařízení
 keywords: Android
 ---
 
-## Android version
+## verze systému Android
 
-The minimum version for running the app is 2.3. Write access to SD cards may require Android 4.4 (cf. [Storage locations](android-storage.md))
+Minimální verze pro spuštění aplikace je 2.3. Přístup pro zápis dat na SD kartu může vyžadovat Android 4.4 (viz [Ukládání map a podkladů na zařízeních se systémem Android](android-storage.md))
 
 
-## Water-proofing
+## Voděodolnost
 
-For obvious reasons, water-proof devices may be advantageous.
+Ze zřejmých důvodů, voděodolná zařízení bývají výhodou.
 
 
 ## Stylus
 
-For doing any serious work, a stylus is a must-have (because of precision & speed, and because of temperature during winter). You should preferably look for devices which come with an adapted stylus such as the Samsung Galaxy Note series, as general styluses for capacitive touch screens have rather wide tips.
+Pro seriózní práci je dotykové pero (stylus) naprostou nutností. Jednak kvůli přesnosti a rychlosti, jednak kvůli teplotám během zimy. Přednostně byste měli vybírat zařízení, která jsou vybavena upraveným dotykovým perem, jako např. tablety řady Samsung Galaxy Note, neboť běžná dotyková pera pro kapacitní dotykové displeje mají příliš široké hroty.
 
 
-## Screen size
+## Velikost obrazovky
 
-There is a compromise between ease of handling (better on smaller devices) and overview (better on larger devices).
-
-
-## Battery
-
-It is very desirable to use a device with replaceable battery. It may be possible to use an external battery pack for devices with integrated battery.
+Jde vždy o kompromis mezi snadnou manipulací (lepší s malými a lehkými zařízeními) a přehledností mapy na displeji (lepší na velkých zařízeních).
 
 
-## Sensors
+## Baterie
 
-OpenOrienteering Mapper can use integrated GPS receivers. However, their accuracy may be low, so it may be advantageous to connect to an external GPS receiver. There is no direct support for external devices in Mapper, but some third party apps bridge the gap. For example the [Bluetooth GPS app](https://play.google.com/store/apps/details?id=googoo.android.btgps&rdid=googoo.android.btgps) provides a "mock" location provider which can be used when Android is put in developer mode.
+Je velmi žádoucí mít zařízení s vyměnitelnou baterií. Někdy je možné použít externí baterii u zařízení s integrovanou baterií.
 
-The app can use a magnetometer and accelerometer as a compass. Almost all modern devices should contain these sensors. If a gyroscope is also available, it will be used to improve the compass stability. However, these sensors are typically not accurate enough to be used for measurements. They can be used for convenience when not relying on a compass, but for accurate measurements, an external compass is recommended.
+
+## Senzory
+
+OpenOrienteering Mapper umí používat GPS přijímač integrovaný v zařízení. Jeho přesnost však bývá zpravidla nízká, a tak může být vhodné připojit externí přijímač signálu GPS. V aplikaci OO Mapper není přímá podpora pro propojení s externími zařízeními, ale existují jiné aplikace, které umí tuto propast překlenout. Například aplikace [Bluetooth GPS](https://play.google.com/store/apps/details?id=googoo.android.btgps&rdid=googoo.android.btgps) vytvoří "falešnou" službu s informací o poloze, která může být použita když je Android přepnut do režimu pro vývojáře.
+
+Aplikace umí používat magnetometr a akcelerometr jako kompas. Takřka všechna moderní zařízení by měla tyto senzory obsahovat. Pokud je v zařízení i gyroskop, pak je použit ke zlepšení stability kompasu. Tyto integrované senzory však nebývají zpravidla tak přesné, aby mohl být kompas použit k měření úhlů. K tomu je vždy vhodnější externí kompas či buzola. Pro přehlednost a základní orientaci však tyto senzory postačí.

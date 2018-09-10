@@ -10,7 +10,7 @@ redirect_from:
 **Poznámka:** [online verze](https://www.openorienteering.org/mapper-manual/) této příručky (anglicky) může obsahovat více informací a opravy.
 {% endif %}
 
-## Contents
+## Obsah
 
 [Main window](main_window.md){: .subpage}
 Explanation of the main drawing window.
@@ -18,25 +18,26 @@ Explanation of the main drawing window.
 [Reference](reference.md){: .subpage}
 Toolbar and menu items, including explanations for [all drawing tools](toolbars.md#drawing-toolbar).
 
-[Starting a new map](new_map.md){: .subpage}
-First steps.
+[Vytvoření nové mapy](new_map.md){: .subpage}
+První kroky.
 
-[Georeferencing](georeferencing.md){: .subpage}
-Defining the relationship between map paper coordinates and real world coordinates.
+[Georeferencování](georeferencing.md){: .subpage}
+Definování vztahu mezi souřadnicemi mapy a souřadnicemi ve skutečnosti.
+<!--Defining the relationship between map paper coordinates and real world coordinates.-->
 
-[Map grid](grid.md){: .subpage}
-Showing a helper grid in the map view.
+[Mřížka mapy](grid.md){: .subpage}
+Zobrazení pomocné mřížky v mapovém okně.
 
-[Templates](templates-index.md){: .subpage}
-Working with templates.
+[Podklady](templates-index.md){: .subpage}
+Práce s podkladovými daty.
 
-[Colors and symbols](colors_symbols.md){: .subpage}
-Modifying map colors and symbols.
+[Barvy a symboly](colors_symbols.md){: .subpage}
+Úprava mapových barev a symbolů.
 
-[Map parts](map_parts.md){: .subpage}
-Organizing objects in maps.
+[Mapové části](map_parts.md){: .subpage}
+Organizace objektů v mapě.
 
-[Object tags](object_tags.md){: .subpage}
+[Tagy objektů](object_tags.md){: .subpage}
 Attaching arbitrary key-value pairs to objects.
 
 [Find objects](find_objects.md){: .subpage}
